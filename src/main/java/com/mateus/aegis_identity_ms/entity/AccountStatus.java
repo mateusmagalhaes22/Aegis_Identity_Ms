@@ -1,13 +1,9 @@
-package com.mateus.aegis_identity_ms.domain;
+package com.mateus.aegis_identity_ms.entity;
 
-/**
- * AccountStatus
- */
 public enum AccountStatus {
     ACTIVE,
     INACTIVE,
-    SUSPENDED
-    ;
+    SUSPENDED;
 
     private AccountStatus() {
     }

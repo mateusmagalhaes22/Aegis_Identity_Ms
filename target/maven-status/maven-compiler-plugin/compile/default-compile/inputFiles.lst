@@ -1,0 +1,17 @@
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/AegisIdentityMsApplication.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/controller/AuthController.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/controller/UserController.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/AccountStatus.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/CreateUserDTO.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/CreateUserResponseDto.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/LoginRequestDto.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/LoginResponseDto.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/UpdateUserDTO.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/User.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/repository/UserRepository.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/security/JwtAuthenticationFilter.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/security/JwtProperties.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/security/JwtUtil.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/security/SecurityConfig.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/service/AuthService.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/service/UserService.java

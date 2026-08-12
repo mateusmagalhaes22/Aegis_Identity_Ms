@@ -1,6 +1,6 @@
 spring:
   application:
-    name: aegis_identity_ms
+    name: aegisIdentity
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: root
@@ -25,3 +25,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
+jwt:
+  secret: 22b0ef20d7ec3777ea19cf5e8f17ca946e274b0f3d6202c50299efbd511965bb
+  expiration-ms: 3600000

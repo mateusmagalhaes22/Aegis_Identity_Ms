@@ -1,4 +1,4 @@
-package com.mateus.aegis_identity_ms.domain;
+package com.mateus.aegis_identity_ms.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
