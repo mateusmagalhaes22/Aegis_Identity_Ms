@@ -4,6 +4,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.mateus.aegis_identity_ms.domain.model.User;
+import com.mateus.aegis_identity_ms.domain.repository.UserRepository;
 import com.mateus.aegis_identity_ms.infrastructure.persistence.UserRepositoryImplementation;
 import com.mateus.aegis_identity_ms.infrastructure.security.JwtUtil;
 import com.mateus.aegis_identity_ms.presentation.dto.LoginRequestDto;
@@ -12,7 +13,7 @@ import com.mateus.aegis_identity_ms.presentation.dto.LoginResponseDto;
 @Service
 public class LoginUseCase {
 
-    private final UserRepositoryImplementation userRepository;
+    private final UserRepository userRepository;
     private final JwtUtil jwtUtil;
     private final PasswordEncoder passwordEncoder;
 

@@ -7,12 +7,13 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 import com.mateus.aegis_identity_ms.domain.model.User;
+import com.mateus.aegis_identity_ms.domain.repository.UserRepository;
 import com.mateus.aegis_identity_ms.infrastructure.persistence.UserRepositoryImplementation;
 
 @Service
 public class GetUserUseCase {
     
-    private final UserRepositoryImplementation userRepository;
+    private final UserRepository userRepository;
 
     public GetUserUseCase(UserRepositoryImplementation userRepository) {
         this.userRepository = userRepository;

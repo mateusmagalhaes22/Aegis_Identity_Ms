@@ -28,18 +28,22 @@ public class UserRepositoryImplementation implements UserRepository {
         return jpaUserRepository.existsByEmail(email);
     }
 
+    @Override
     public Optional<User> findById(UUID id) {
         return jpaUserRepository.findById(id);
     }
 
+    @Override
     public List<User> findAll() {
         return jpaUserRepository.findAll();
     }
 
+    @Override
     public User save(User user) {
         return jpaUserRepository.save(user);
     }
 
+    @Override
     public void deleteById(UUID id) {
         jpaUserRepository.deleteById(id);
     }

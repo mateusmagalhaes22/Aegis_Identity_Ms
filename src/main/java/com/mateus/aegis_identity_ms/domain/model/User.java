@@ -1,6 +1,5 @@
 package com.mateus.aegis_identity_ms.domain.model;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -33,11 +32,7 @@ public class User {
 
     private String cpf;
 
-    private BigDecimal balance;
-
-    private AccountStatus status;
-
-    private LocalDateTime createdAt;
+    private Account account;
 
     private LocalDateTime updatedAt;
 }
