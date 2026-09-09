@@ -9,7 +9,9 @@
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/model/AccountStatus.java
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/model/User.java
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/domain/repository/UserRepository.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/infrastructure/messaging/KafkaProducerConfig.java
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/infrastructure/messaging/TransactionKafkaListener.java
+/home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/infrastructure/messaging/TransactionValidationDto.java
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/infrastructure/persistence/JpaUserRepository.java
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/infrastructure/persistence/UserRepositoryImplementation.java
 /home/mateusmagalhaes/dev/Aegis/Aegis_Identity_Ms/src/main/java/com/mateus/aegis_identity_ms/infrastructure/security/JwtAuthenticationFilter.java

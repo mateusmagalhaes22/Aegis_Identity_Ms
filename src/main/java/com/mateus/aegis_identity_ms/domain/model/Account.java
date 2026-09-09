@@ -5,9 +5,11 @@ import java.time.LocalDateTime;
 
 import jakarta.persistence.Embeddable;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Embeddable
+@NoArgsConstructor
 public class Account {
 
     public Account(BigDecimal balance, AccountStatus status, LocalDateTime createdAt) {
@@ -21,5 +23,13 @@ public class Account {
     private AccountStatus status;
 
     private LocalDateTime createdAt;
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal add) {
+        this.balance = add;
+    }
     
 }

@@ -3,6 +3,7 @@ com/mateus/aegis_identity_ms/infrastructure/security/JwtUtil.class
 com/mateus/aegis_identity_ms/application/useCase/LoginUseCase.class
 com/mateus/aegis_identity_ms/application/useCase/UpdateUserUseCase.class
 com/mateus/aegis_identity_ms/presentation/dto/CreateUserResponseDto.class
+com/mateus/aegis_identity_ms/infrastructure/messaging/KafkaProducerConfig.class
 com/mateus/aegis_identity_ms/infrastructure/security/SecurityConfig.class
 com/mateus/aegis_identity_ms/infrastructure/persistence/UserRepositoryImplementation.class
 com/mateus/aegis_identity_ms/application/useCase/ApplyTransactionToBalanceUseCase.class

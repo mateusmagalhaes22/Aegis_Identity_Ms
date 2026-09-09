@@ -26,6 +26,7 @@ spring:
 app:
   kafka:
     transactions-topic: ${KAFKA_TRANSACTIONS_TOPIC:transactions}
+    transaction-validation-topic: ${KAFKA_TRANSACTION_VALIDATION_TOPIC:transaction-validation}
 server:
   port: 0
   servlet:
