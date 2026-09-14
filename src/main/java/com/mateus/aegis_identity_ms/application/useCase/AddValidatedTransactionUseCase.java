@@ -15,7 +15,7 @@ public class AddValidatedTransactionUseCase {
     
     public void add(String transactionId) {
         if (!validatedTransactionRepository.existsById(transactionId)) {
-            validatedTransactionRepository.save(new ValidatedTransaction(transactionId, new java.util.Date()));
+            validatedTransactionRepository.save(new ValidatedTransaction(transactionId));
         }
     }
 }

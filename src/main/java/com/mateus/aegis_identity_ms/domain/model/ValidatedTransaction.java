@@ -4,11 +4,19 @@ import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-public record ValidatedTransaction(
+@Data
+@NoArgsConstructor
+public class ValidatedTransaction {
     @Id
-    String id,
-    Date validatedAt
-) {
+    private String id;
+    private Date validatedAt;
+
+    public ValidatedTransaction(String id) {
+        this.id = id;
+        this.validatedAt = new Date();
+    }
 }
