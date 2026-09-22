@@ -2,7 +2,7 @@ spring:
   application:
     name: aegisIdentity
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/identity
     username: root
     password: root
     driver-class-name: org.postgresql.Driver
@@ -25,8 +25,8 @@ spring:
 
 app:
   kafka:
-    transactions-topic: ${KAFKA_TRANSACTIONS_TOPIC:transactions}
     transaction-validation-topic: ${KAFKA_TRANSACTION_VALIDATION_TOPIC:transaction-validation}
+    transaction-fraud-analysis-topic: ${KAFKA_TRANSACTION_FRAUD_ANALYSIS_TOPIC:transaction-fraud-analysis}
 server:
   port: 0
   servlet:

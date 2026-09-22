@@ -9,7 +9,7 @@ public class IsTransactionValidatedUseCase {
 
     private final ValidatedTransactionRepository validatedTransactionRepository;
 
-    public IsTransactionValidatedUseCase(com.mateus.aegis_identity_ms.domain.repository.ValidatedTransactionRepository validatedTransactionRepository) {
+    public IsTransactionValidatedUseCase(ValidatedTransactionRepository validatedTransactionRepository) {
         this.validatedTransactionRepository = validatedTransactionRepository;
     }
     

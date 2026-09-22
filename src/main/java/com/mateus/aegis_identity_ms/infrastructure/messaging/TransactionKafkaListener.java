@@ -39,16 +39,20 @@ public class TransactionKafkaListener {
         this.addValidatedTransactionUseCase = addValidatedTransactionUseCase;
     }
 
-    @KafkaListener(topics = "${app.kafka.transactions-topic:transactions}")
+    @KafkaListener(topics = "${app.kafka.transaction-fraud-analysis-topic:transaction-fraud-analysis}")
     public void consume(String message) throws Exception {
         JsonNode transaction = objectMapper.readTree(message);
         String transactionId = MessageFieldsValidation.requiredText(transaction, "id");
         UUID userId = UUID.fromString(MessageFieldsValidation.requiredText(transaction, "userId"));
         BigDecimal amount = MessageFieldsValidation.requiredDecimal(transaction, "amount");
+        String fraudStatus = MessageFieldsValidation.requiredText(transaction, "status");
 
         if (isTransactionValidatedUseCase.IsTransactionValidated(transactionId)) {
             kafkaTemplate.send(validationTopic,
                 new TransactionValidationDto("failure", "Transaction already validated", transactionId));
+        } else if ("REJECTED".equals(fraudStatus)) {
+            kafkaTemplate.send(validationTopic,
+                new TransactionValidationDto("failure", "Fraudulent transaction detected", transactionId));
         } else {
             addValidatedTransactionUseCase.add(transactionId);
             try {
@@ -60,6 +64,5 @@ public class TransactionKafkaListener {
                     new TransactionValidationDto("failure", e.getMessage(), transactionId));
             }
         }
-        
     }
 }
